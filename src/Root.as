@@ -2,30 +2,10 @@ package
 {
 
     
-    import flash.display.BitmapData;
-    import flash.display3D.Context3D;
-    import flash.events.MouseEvent;
-    import flash.geom.Rectangle;
-    import flash.system.System;
-
-	import utils.ProgressBar;
-
-    import starling.core.RenderSupport;
-    import starling.core.Starling;
-    import starling.display.DisplayObject;
-    import starling.display.Image;
     import starling.display.Sprite;
-    import starling.events.Event;
-    import starling.events.Touch;
-    import starling.events.TouchEvent;
-    import starling.events.TouchPhase;
-    import starling.text.BitmapFont;
-    import starling.text.TextField;
-    import starling.textures.RenderTexture;
-    import starling.textures.Texture;
     import starling.utils.AssetManager;
     
-    import starling.display.Button;
+    import utils.ProgressBar;
 
     /** The Root class is the topmost display object in your game. 
 	 *  It is a general scene switcher and will contain any globally accessable items liek menus and transition screens.

@@ -57,8 +57,8 @@
 		
 			// Add warrior
 			var armature:Armature;
-			armature = factory.buildArmature("Characters/Wubbzy");
-			armature.display.x = 600;
+			armature = factory.buildArmature("knight");
+			armature.display.x = 512;
 			armature.display.y = 300;
 			sceneRoot.addChild(armature.display as Sprite);
 			WorldClock.clock.add(armature);

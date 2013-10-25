@@ -1,28 +1,23 @@
 package
 {
 	import flash.desktop.NativeApplication;
-	import flash.display.Bitmap;
 	import flash.display.Sprite;
 	import flash.display.StageAlign;
 	import flash.events.Event;
 	import flash.filesystem.File;
 	import flash.geom.Rectangle;
 	import flash.system.Capabilities;
-	import flash.system.System;
 	
 	import starling.core.Starling;
 	import starling.events.Event;
-	import starling.textures.Texture;
 	import starling.utils.AssetManager;
 	import starling.utils.RectangleUtil;
 	import starling.utils.ScaleMode;
-	import starling.utils.formatString;
 	
 	public class RetinaDemo extends Sprite
 	{
 		
 		private var mStarling:Starling;
-		
 		private var retinaTest:Boolean = true;
 		
 		public function RetinaDemo()
@@ -79,7 +74,7 @@ package
 			mStarling.stage.stageHeight = stageHeight; // <- same size on all devices!
 			mStarling.simulateMultitouch  = false;
 			mStarling.enableErrorChecking = Capabilities.isDebugger;
-			mStarling.showStatsAt("center", "bottom");
+			mStarling.showStatsAt("center", "top");
 			
 			
 			mStarling.addEventListener(starling.events.Event.ROOT_CREATED, 
